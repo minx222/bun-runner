@@ -1,0 +1,30 @@
+{
+  "name": "bun-runner",
+  "version": "0.1.0",
+  "module": "./src/index.ts",
+  "description": "fast server for bun, use rxjs for middleware",
+  "author": "case.mo",
+  "private": false,
+  "repository": {
+    "type": "git"
+  },
+  "typesVersions": {
+    ">=4.2": {
+      "*": [
+        "types/*"
+      ]
+    }
+  },
+  "scripts": {
+    "build:js": "bun build ./src/index.ts --outfile ./dist/index.js"
+  },
+  "type": "module",
+  "dependencies": {
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.1"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0",
+    "@types/bun": "latest"
+  }
+}
